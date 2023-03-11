@@ -1,0 +1,40 @@
+<html lang="utf-8">
+<head>
+    <title>俄罗斯方块</title>
+    <style>
+        .container{
+            width: 400px;
+            height: 720px;
+            /* background-color: black; */
+            position: relative;
+            background: url("static/selfie.jpg") no-repeat;
+            background-size: 400px 720px;
+        }
+        .active_block{
+            width: 40px;
+            height: 40px;
+            /* background-color: cadetblue; */
+            background: #ffd75e url("static/cpp.jpg") center no-repeat;
+            background-size: 30px;
+            border: .3px solid #eeeeee;
+            box-sizing: border-box;
+            position: absolute;
+        }
+        .fixed_block{
+            width: 40px;
+            height: 40px;
+            /* background-color: #fefefe; */
+            background: #bbbbbb url("static/cpp.jpg") center no-repeat;
+            background-size: 30px;
+            border: .3px solid #fefefe;
+            box-sizing: border-box;
+            position: absolute;
+        }
+    </style>
+    <script src="static/lodash.min.js"></script>
+    <script src="static/main.js"></script>
+</head>
+<body onload="init()">
+    <div id="container" class="container"></div>
+</body>
+</html>
